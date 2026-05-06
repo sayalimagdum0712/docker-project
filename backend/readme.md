@@ -1,4 +1,4 @@
-# Spring Boot Backend Deployment Guide 
+# Spring Boot Backend Deployment Guid 
 
 
 ## Step 1: Install docker
@@ -11,15 +11,14 @@
 
 If docker is not installed, install the docker.
 
-```shell
+```bash
 apt update && apt install docker.io -y
 ```
 
 ## Step 2: clone the repository
 
-Installing maven in ubuntu:
 
-```shell
+```bash
 git clone <repository URL>
 ```
 Go to the EasyCRUD/backend
@@ -28,7 +27,7 @@ Go to the EasyCRUD/backend
 
 ### Update DB credentials in application.properties:
 
-```shell
+```bash
 cd backend
 vim src/main/resources/application.properties
 ```
@@ -42,7 +41,7 @@ vim src/main/resources/application.properties
 ## Step 4:Create docker image using build command
 
 
-```shell
+```bash
 docker build . -t backend:v1
 ```
 
