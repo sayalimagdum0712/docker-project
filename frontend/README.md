@@ -4,7 +4,7 @@ This guide provides step-by-step instructions for setting up a React project.
 
 ## 1. Go to Frontend
 
-```shell
+```bash
 cd Easycrud/frontend/
 ```
 
@@ -13,7 +13,7 @@ cd Easycrud/frontend/
 
 To edit the following file, run the following command:
 
-```shell
+```bash
 nano .env
 ```
 change the ip address
@@ -28,7 +28,7 @@ docker build -t frontend:v1
 
 ## 4. Create container from the docker image
 
-```shell
+```bash
 docker run -d -p 80:80 --name frontend frontend:v1
 ```
 
